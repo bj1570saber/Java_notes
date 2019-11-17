@@ -2,7 +2,11 @@ package static_block;
 
 public class drive {
 
+	public static void print_test() {
+		System.out.println("test");
+	}
 	public static void main(String[] args) {
+		print_test();
 		//Invoke static block first then print static variable i_love.
 		System.out.println(StaticBlock.i_love);
 		System.out.println(StaticBlock.getLove());
