@@ -1,6 +1,6 @@
 package static_block;
 
-public class drive {
+public class Driver {
 
 	public static void print_test() {
 		System.out.println("test");
