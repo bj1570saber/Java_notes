@@ -3,7 +3,7 @@ public class IntFloatDouble {
 
 	public static void main(String[] args) {
 		int i = 5;
-		float f = 5;
+		float f = 5.0f;
 		double d = 5;
 		System.out.println(i);
 		System.out.println(f);
