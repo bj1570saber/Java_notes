@@ -1,0 +1,67 @@
+Practice class note:
+
+return c1.value - c2.value;
+this can not as compare, it could be overflow-> 
+    very small number - big number = positive number (witch is wrong)
+
+comparable
+
+batch processing VS stream processing
+depends on requirement from PM
+
+practice class 10:
+面试问题：binary tree 实现 heap 可以吗？
+答：binary tree 有额外三个pointer（left, right, root）， "memory overhead"。
+heap一般用array实现(level order traversal), "better performance"
+
+offer():
+add new node to the end of array. -> array movement O(1) - array self scale.
+then percolate up.
+
+poll():
+move last leaf to top and percolate down. -> array movement O(1)
+
+stable sort:
+
+practice class 11：
+如果内部类 static 或 non-static 都可以，那么尽可能使其为 static inner class
+
+question： locality cache ->存一整个page？所以会把附近的data缓存到cache?
+
+practice class 12:
+DFS:
+base case; selection path; back tracking clean up; find all solution or search specific one.
+
+BFS: usually do not search all nodes
+termination before traversal all nodes.
+if find top min or max k value.
+
+Why coding againt interface:
+1. Testing: 
+    input: interface
+    output: interface
+    easy to write test case and improve the usability.
+    We don't care much about function body implementation.
+    It will save a lot of effort when refactoring the function in future.
+In summary: Use interface whenever it's possible.
+
+
+系统，分布系统大多用: open addressing, 软件程序，Java程序都是separate chaining。
+面试的时候，用average O(1)！！！ 
+hashcode() 主要用途除了 equals() hashmap这类data structure ->hash()
+
+# What’s in-place method mean?
+Can NOT use extra space such as Map or Set or List
+
+#
+-1 % 3 = 2 取余 可负
+-1 % 3 =   取莫 - 非负
+负数的二进制第一位是1
+
+# Lecture: bit
+How to get: 0 1 0 0 0 0 1 0
+              i         j
+(1 << i) + (1 << j)
+(1 << i) | (1 << j)
+(1 << i) ^ (1 << j)
+
